@@ -12,7 +12,7 @@ import com.test.EDTS.Entity.Employee;
 import com.test.EDTS.Service.EDTSService;
 
 @RestController
-@RequestMapping(path = "API")
+@RequestMapping(path = "APIX")
 public class APIController {
 	
 	@Autowired
