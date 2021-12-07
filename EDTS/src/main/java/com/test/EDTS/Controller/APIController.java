@@ -12,7 +12,7 @@ import com.test.EDTS.Entity.Employee;
 import com.test.EDTS.Service.EDTSService;
 
 @RestController
-@RequestMapping(path = "APIX")
+@RequestMapping(path = "API")
 public class APIController {
 	
 	@Autowired
@@ -32,20 +32,10 @@ public class APIController {
 	public String createPSAK5055Parameter(@RequestBody Employee employee) {
 		return edtsService.create(employee);
 	}
-//	
-//	@GetMapping("/Get")
-//	public PSAK5055ParamGetDTO getPSAK5055Parameter() {
-//		return psak5055ParamService.getData();
-//	}
-//	
+
 	@GetMapping("/Update")
 	public String updatePSAK5055Parameter(@RequestBody Employee employee) {
 		return edtsService.update(employee);
 	}
-//	
-//	@DeleteMapping("/Delete")
-//	public ObjectStatus deletePSAK5055Parameter(@RequestParam String recid) {
-//		return psak5055ParamService.deleteData(recid);
-//	}
 
 }
